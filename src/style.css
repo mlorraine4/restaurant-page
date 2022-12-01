@@ -1,0 +1,185 @@
+* {
+    margin: 0;
+}
+
+@font-face {
+    font-family: 'KrabbyPatty';
+    src: url(KrabbyPatty-PKZAB.ttf);
+}
+
+body {
+    font-family: 'KrabbyPatty';
+}
+
+img {
+    max-height: 100%;
+    max-width: 100%;
+}
+
+#content {
+    display: grid;
+    grid-template-columns: minmax(1029px, 100vw);
+    grid-template-rows: minmax(200px, 20%) 80%;
+    text-align: center;
+}
+
+.header {
+    background-color: aquamarine;
+    grid-row: 1/2;
+    height: auto;
+    display: flex;
+    background: url('./images/wood.png');
+    justify-content: center;
+    align-items: center;
+}
+
+.title {
+    width: 60%;
+    text-align: left;
+    font-size: 50px;
+    font-weight: bold;
+    text-shadow: 2px 2px 2px black;
+    color: red;
+    padding-left: 20px;
+}
+
+.description {
+    grid-row: 2/3;
+    background: url('./images/ocean-background.jpg');
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+button {
+    /* to-do: button minimum size to fit all text */
+    font-family: 'KrabbyPatty';
+    border: none;
+    background-color: aquamarine;
+    color: red;
+    border-radius: 8px;
+    width: 115px;
+    font-size: 20px;
+    margin-left: 20px;
+}
+
+button:hover {
+    animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+    transform: translate3d(0, 0, 0);
+    perspective: 1000px;
+}
+
+@keyframes shake {
+    10%, 90% {
+      transform: translate3d(-1px, 0, 0);
+    }
+    20%, 80% {
+      transform: translate3d(2px, 0, 0);
+    }
+    30%, 50%, 70% {
+      transform: translate3d(-4px, 0, 0);
+    }
+    40%, 60% {
+      transform: translate3d(4px, 0, 0);
+    }
+  }
+
+.homeImg {
+    background: url('./images/krabbypatty.png');
+    width: 600px;
+    height: 600px;
+}
+
+.homeText {
+    font-size: 60px;
+    width: 321px;
+    color: red;
+    text-shadow: 2px 2px 2px white;
+    padding: 20px;
+}
+
+.contactUsText {
+    color: red;
+    font-size: 32px;
+    text-shadow: 2px 2px 2px white;
+    padding: 30px;
+}
+
+.contactUsImg {
+    background: url('./images/krustykrab.jpg');
+    height: 600px;
+    width: 800px;
+    border: 4px solid white;
+}
+
+.menuImgDiv {
+    background: url('./images/spongebob2.png');
+    background-size: 200px 200px;
+    height: 200px;
+    width: 200px;
+    align-self: flex-start;
+    margin: 10px;
+}
+
+.menu {
+    background-color: #e5d7a2;
+    border: 3px solid #704b26;
+    padding: 20px;
+    box-shadow: 2px 2px 2px #6e221a;
+    margin: 20px;
+}
+
+.menuTitle {
+    color: #6e221a;
+    font-size: 136px;
+}
+
+.menuItems {
+    display: grid;
+    gap: 8px;
+    grid-template-columns: repeat(2, auto);
+    grid-auto-rows: auto;
+    text-align: left;
+    font-size: 30px;
+}
+
+.Left2 {
+    grid-row: 2/3;
+    grid-column: 1/2;
+}
+
+.Left3 {
+    grid-row: 3/4;
+    grid-column: 1/2;
+
+}
+
+.Left4 {
+    grid-row: 4/5;
+    grid-column: 1/2;
+
+}
+
+.Left5 {
+    grid-row: 5/6;
+    grid-column: 1/2;
+
+}
+
+.Left6 {
+    grid-row: 6/7;
+    grid-column: 1/2;
+
+}
+
+.Left7 {
+    grid-row: 7/8;
+    grid-column: 1/2;
+
+}
+
+.tab {
+    margin-left: 5%;
+}

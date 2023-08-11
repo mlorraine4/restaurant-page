@@ -10,7 +10,6 @@ The goal of this project was to make a multi-page restaurant website using Webpa
 [The Krusty Krab Restaurant](https://mlorraine4.github.io/restaurant-page/)
 
 ## Built With
-- HTML
 - CSS 
 - Javascript
 
